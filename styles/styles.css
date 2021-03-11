@@ -49,4 +49,9 @@ p {
           transform: scale(1.1);
   opacity: 0.9;
 }
+
+.primary-title {
+  font-size: clamp(3rem, calc(5vw + 1rem), 4.5rem);
+  line-height: 1.1;
+}
 /*# sourceMappingURL=styles.css.map */

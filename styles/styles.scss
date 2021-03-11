@@ -44,3 +44,9 @@ p {
   transform: scale(1.1);
   opacity: 0.9;
 }
+
+.primary-title {
+  //biggest can be 4.5rem, smallest can be 3rem
+  font-size: clamp(3rem, calc(5vw + 1rem), 4.5rem);
+  line-height: 1.1;
+}
