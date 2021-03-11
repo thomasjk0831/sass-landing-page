@@ -27,6 +27,12 @@ p {
   margin: 0 auto;
 }
 
+//add a margin-top only in descendants of spacing have an
+//adjacent element up top
+.spacing > * + * {
+  margin-top: var(--spacer, 2rem);
+}
+
 .btn {
   display: inline-block;
   text-decoration: none;
@@ -48,5 +54,20 @@ p {
 .primary-title {
   //biggest can be 4.5rem, smallest can be 3rem
   font-size: clamp(3rem, calc(5vw + 1rem), 4.5rem);
-  line-height: 1.1;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.hero {
+  color: white;
+  text-align: center;
+  padding: 15em 0;
+  background: #222;
+  @supports (background-blend-mode: multiply) {
+    background: url(../img/shoe-3.png), radial-gradient(#444, #111);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  // background-image: url(../img/shoe-3.png), radial-gradient(#444, #111);
 }
