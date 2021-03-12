@@ -133,6 +133,7 @@ section {
 
 .featured__item:hover .featured__details, .featured__item:focus .featured__details {
   opacity: 1;
+  text-shadow: 0 0 2em white;
 }
 
 .featured__item::after {
@@ -156,5 +157,18 @@ section {
   display: block;
   font-weight: 700;
   font-size: 2.5rem;
+}
+
+.product {
+  background: radial-gradient(limegreen, yellow);
+  padding: 3em 0;
+  border-radius: 3em;
+  margin-bottom: 3em;
+}
+
+.product__title {
+  font-size: 4rem;
+  color: #fff;
+  text-shadow: 0 0 0.2em rgba(0, 0, 0, 0.2);
 }
 /*# sourceMappingURL=styles.css.map */
