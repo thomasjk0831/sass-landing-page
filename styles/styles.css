@@ -73,6 +73,18 @@ p {
     background-blend-mode: multiply;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-position: center center;
   }
+}
+
+.section-title {
+  text-align: center;
+  font-size: clamp(2.5rem, calc(5vw + 1rem), 4.5rem);
+  line-height: 1;
+  color: #173353;
+}
+
+section {
+  padding: 7em 0;
 }
 /*# sourceMappingURL=styles.css.map */

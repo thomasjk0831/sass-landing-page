@@ -68,6 +68,18 @@ p {
     background-blend-mode: multiply;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    background-position: center center;
   }
   // background-image: url(../img/shoe-3.png), radial-gradient(#444, #111);
+}
+
+.section-title {
+  text-align: center;
+  font-size: clamp(2.5rem, calc(5vw + 1rem), 4.5rem);
+  line-height: 1;
+  color: #173353;
+}
+
+section {
+  padding: 7em 0;
 }
