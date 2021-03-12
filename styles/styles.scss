@@ -90,8 +90,36 @@ p {
   font-size: clamp(2.5rem, calc(5vw + 1rem), 4.5rem);
   line-height: 1;
   color: #173353;
+  margin-bottom: 5rem;
 }
 
 section {
   padding: 7em 0;
+}
+
+.featured {
+  background: #eee;
+
+  &__item {
+    display: block;
+    position: relative;
+    transform: scale(0.85);
+    transition: transform 250ms ease-in-out;
+
+    &:hover,
+    &:focus {
+      transform: scale(1);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 10%;
+      left: 10%;
+      padding: 75% 75% 0 0;
+      background: #2193b0;
+      border-radius: 50%;
+      z-index: -1;
+    }
+  }
 }
