@@ -57,6 +57,7 @@ p {
   transition: transform 250ms ease-in-out, opacity 175ms linear;
 }
 
+//allow button to scale out
 .btn:hover,
 .btn:focus {
   transform: scale(1.1);
@@ -144,6 +145,7 @@ section {
   }
 }
 
+//background color for product
 .product {
   background: radial-gradient(limegreen, yellow);
   padding: 3em 0;
