@@ -160,15 +160,19 @@ section {
 }
 
 .product {
-  background: radial-gradient(limegreen, yellow);
+  background: radial-gradient(var(--clr-inner, limegreen), var(--clr-outer, yellow));
   padding: 3em 0;
   border-radius: 3em;
   margin-bottom: 3em;
+  text-align: center .product __title;
+  text-align-font-size: 4rem;
+  text-align-line-height: 1.1;
+  text-align-color: #fff;
+  text-align-text-shadow: 0 0 0.2em rgba(0, 0, 0, 0.2);
 }
 
-.product__title {
-  font-size: 4rem;
-  color: #fff;
-  text-shadow: 0 0 0.2em rgba(0, 0, 0, 0.2);
+.shoe-red {
+  --clr-inner: red;
+  --clr-outer:orange;
 }
 /*# sourceMappingURL=styles.css.map */

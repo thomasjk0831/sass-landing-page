@@ -147,14 +147,21 @@ section {
 
 //background color for product
 .product {
-  background: radial-gradient(limegreen, yellow);
+  background: radial-gradient(var(--clr-inner, limegreen), var(--clr-outer,yellow));
   padding: 3em 0;
   border-radius: 3em;
   margin-bottom: 3em;
+  text-align: center
 
   &__title {
     font-size: 4rem;
+    line-height: 1.1;
     color: #fff;
     text-shadow: 0 0 0.2em rgba(#000, 0.2);
   }
+}
+
+.shoe-red{
+  --clr-inner: red;
+  --clr-outer:orange;
 }
